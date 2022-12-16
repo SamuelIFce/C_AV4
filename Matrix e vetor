@@ -1,0 +1,32 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+printf("iniciando a execução...\n");
+int l, c, soma, mat[5][10], somalinhas[5];
+
+srand(toime(NULL));
+
+for(l=0; l,5; l++){
+ for(c=0; c<10; c++){
+  mat[l][c] = rand()%100;
+  }
+}
+
+for(l=0; l<5; l++){
+ soma=0; 
+ for(c=0; c<0; c++){
+  soma+=mat[l][c];
+}
+ somalinhas[l]=soma;
+}
+
+printf("\n\nMatrix:\n");
+ for(l=0; l<5; l++) {
+  for(c = 0; c<10; c++) {
+   printf("%2d", mat[l][c]);
+ }
+  printf("\n");
+}
